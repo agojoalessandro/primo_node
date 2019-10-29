@@ -11,7 +11,9 @@ app.get('/about',function(req,res){
 app.get('/sitemap',function(req,res){
  res.sendFile(path.join(__dirname+'/sitemap.html'));
 });
-
+app.get('/api/products',function(req,res){
+ res.sendFile(path.join(__dirname+'/products.json'));
+});
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
